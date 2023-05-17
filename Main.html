@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DogSoftware</title>
+  <style>
+    /* CSS styles for the 3D effects */
+    body {
+      perspective: 1000px;
+    }
+    
+    .container {
+      transform-style: preserve-3d;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    
+    .box {
+      width: 300px;
+      height: 300px;
+      background-color: #eaeaea;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+    
+    .box:hover {
+      transform: translate(-50%, -50%) rotateX(30deg) rotateY(30deg);
+    }
+    
+    .box-face {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #ccc;
+    }
+    
+    .box-front {
+      transform: translateZ(150px);
+    }
+    
+    .box-back {
+      transform: rotateY(180deg) translateZ(150px);
+    }
+    
+    .box-left {
+      transform: rotateY(-90deg) translateZ(150px);
+    }
+    
+    .box-right {
+      transform: rotateY(90deg) translateZ(150px);
+    }
+    
+    .box-top {
+      transform: rotateX(90deg) translateZ(150px);
+    }
+    
+    .box-bottom {
+      transform: rotateX(-90deg) translateZ(150px);
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 36px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>DogSoftware</h1>
+  <div class="container">
+    <div class="box">
+      <div class="box-face box-front"></div>
+      <div class="box-face box-back"></div>
+      <div class="box-face box-left"></div>
+      <div class="box-face box-right"></div>
+      <div class="box-face box-top"></div>
+      <div class="box-face box-bottom"></div>
+    </div>
+  </div>
+</body>
+</html>
