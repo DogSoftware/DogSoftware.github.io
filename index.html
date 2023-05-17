@@ -69,6 +69,28 @@
       margin-top: 50px;
       font-size: 36px;
       color: #333;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .cube-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      background-image: url('image.jpg'); /* Replace 'image.jpg' with your desired image file */
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+    
+    .cube-text {
+      text-align: center;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 24px;
+      color: #333;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -81,7 +103,10 @@
       <div class="box-face box-left"></div>
       <div class="box-face box-right"></div>
       <div class="box-face box-top"></div>
-      <div class="box-face box-bottom"></div>
+      <div class="box-face box-bottom">
+        <div class="cube-image"></div>
+        <div class="cube-text">DogSoftware</div>
+      </div>
     </div>
   </div>
 </body>
