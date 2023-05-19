@@ -4,8 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DogSoftware</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #eaeaea;
+    }
+    header {
+      background-color: #2f855a;
+      padding: 20px;
+      color: #ffffff;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    footer {
+      background-color: #2f855a;
+      padding: 20px;
+      color: #ffffff;
+      text-align: center;
+    }
+  </style>
+  <script>
+    function showDate() {
+      var currentDate = new Date();
+      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      var formattedDate = currentDate.toLocaleDateString('en-US', options);
+      document.getElementById('currentDate').textContent = formattedDate;
+    }
+  </script>
 </head>
-<body>
+<body onload="showDate()">
   <header>
     <h1>DogSoftware</h1>
     <nav>
@@ -38,10 +85,9 @@
       <h2>Contact Us</h2>
       <p>Provide contact information here.</p>
     </section>
+    
+    <p>Current Date: <span id="currentDate"></span></p>
   </main>
   
   <footer>
     <p>© 2023 DogSoftware. All rights reserved.</p>
-  </footer>
-</body>
-</html>
