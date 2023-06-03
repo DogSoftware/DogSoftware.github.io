@@ -6,11 +6,8 @@
   <title>DogSoftware</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-  <link href="bgaudioplayer.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-<script src="bgaudioplayer.js">
 
 </script>
   <style>
@@ -132,33 +129,6 @@
     <p><span id="currentDate"></span></p>
   </main>
 
-  <!--Define audio tag with source elements pointing to audio file (and fallback files)-->
-  <p>Want some music?</p>
-<audio id="mybgplayer">
-  <source src="Music/NewYork,NewYork.mp3" type="audio/mpeg">
-  <source src="Music/NewYork,NewYork.ogg" type="audio/ogg">
-  </audio>
-  
-  <!--Define corresponding audio interface. Certain CSS classes trigger changes to them-->
-  
-  <div id="mybgplayerui" class="bgplayerui">
-  <img class="play" src="images/play.gif" data-pausesrc="images/pause.gif" /> <img class="rewind" src="images/restart.gif" style="position:relative; left:-4px" /> <div class="volume"></div>
-  
-  </div>
-  
-  <script>
-  
-  
-  var playerinstance=bgaudioplayer({
-    audioid: 'mybgplayer', // id of audio element
-    audiointerface: 'mybgplayerui', // id of corresponding UI div
-    autoplay: true, // auto play music?
-    persistTimeLine: true, // Persist player's current timeline/ volume when moving from page to page?
-    volume: 1.0, // Default volume (0.0 to 1.0)
-    volumelevels: 15 // # of volume bars to show in UI
-  })
-  
-  </script>
   
   <footer>
     <p>© 2023 DogSoftware. All rights reserved.</p>
