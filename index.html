@@ -29,210 +29,220 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: "Arial", sans-serif;
       background-color: #f2f2f2;
       margin: 0;
       padding: 0;
     }
-    
-
+  
     header {
-      background-color: #2f855a;
-      padding: 20px;
-      color: #ffffff;
-      text-align: center;
-    }
+  background-color: #0b8a46;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
 
-    h1 {
-      font-size: 40px;
-      margin: 0;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    }
+nav {
+  background-color: #044727;
+  padding: 10px;
+}
 
-    nav {
-      background-color: #1f5240;
-      padding: 10px;
-      text-align: center;
-    }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-    }
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
 
-    nav ul li {
-      display: inline;
-      margin-right: 20px;
-    }
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: font-weight 0.3s ease-in-out;
+}
 
-    nav ul li a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
+nav ul li a:hover {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
-    nav ul li a:hover {
-      color: #ffa500;
-    }
+main {
+  margin: 20px;
+  text-align: center;
+}
 
-    main {
-      padding: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
+#hero {
+  background-color: #e9e9e9;
+  padding: 20px;
+}
 
-    section {
-      margin-bottom: 40px;
-    }
+#LatestVideos {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
 
-    h2 {
-      font-size: 30px;
-      color: #2f855a;
-      margin: 0 0 20px;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    }
+#LatestVideos h2 {
+  margin-bottom: 20px;
+}
 
-    p {
-      margin: 0;
-    }
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    footer {
-      background-color: #2f855a;
-      padding: 20px;
-      color: #ffffff;
-      text-align: center;
-    }
+.video-item {
+  width: 300px;
+  margin: 10px;
+}
 
-    footer p {
-      margin: 0;
-    }
+.video-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
 
-    /* New styles */
+.video-item h3 {
+  margin-top: 10px;
+}
 
-    marquee {
-      font-size: 24px;
-      color: #ffffff;
-      font-weight: bold;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    }
+#testimonials {
+  background-color: #e9e9e9;
+  padding: 20px;
+}
 
-    #about p {
-      line-height: 1.6;
-      color: #555555;
-    }
+.testimonial {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
 
-    #mods ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
+.testimonial blockquote {
+  font-style: italic;
+  color: #666;
+}
 
-    #contact p {
-      margin-bottom: 10px;
-    }
+.testimonial p {
+  margin-top: 10px;
+  font-weight: bold;
+}
 
-    #currentDate {
-      font-size: 16px;
-      color: #2f855a;
-    }
+footer {
+  background-color: #044727;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
   </style>
-  <script>
-    function showDate() {
-      var currentDate = new Date();
-      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-      var formattedDate = currentDate.toLocaleDateString('en-US', options);
-      document.getElementById('currentDate').textContent = formattedDate;
-    }
-  </script>
 
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVRFSTS"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <script>
-    $(document).ready(function() {
-      // Add animation to the header
-      $('header').fadeIn(1500);
-      
-      // Add animation to the navigation menu
-      $('nav ul li').each(function(index) {
-        $(this).delay(index * 200).fadeIn(1000);
-      });
-      
-      // Add animation to the main content
-      $('main').fadeIn(2000);
-      
-      // Marquee animation
-      var marqueeText = 'Welcome to the official DogSoftware Site';
-      var marqueeElement = $('<marquee>' + marqueeText + '</marquee>');
-      $('header').append(marqueeElement);
-    });
-  </script>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVRFSTS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
 </head>
-<body onload="showDate()">
+<body>
   <header>
     <h1>DogSoftware</h1>
   </header>
-  
+
   <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#mods">Mods</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="main.html">Home</a></li>
+      <li><a href="modsforppg.html">Mods for PPG</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
     </ul>
   </nav>
-  
+
   <main>
-    <section id="about">
-      <h2>About DogSoftware</h2>
-      <p>DogSoftware is an independent game and desktop application development studio dedicated to creating high-quality, innovative products for gamers and non-gamers alike. Our team is made up of passionate individuals who share a love of creating fun and engaging experiences for our users. We specialize in developing both original games and mods for existing games, as well as practical desktop applications. Our mission is to provide our users with the best possible software and gaming experiences, and we are constantly working to improve and innovate.</p>
+    <section id="hero">
+      <h2>Welcome to the official DogSoftware website!</h2>
+      <p>Indie studio developing desktop games/applications and mods for existing games such as People Playground</p>
     </section>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9941958427670524"
-     crossorigin="anonymous"></script>
-<!-- Square Responsive -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9941958427670524"
-     data-ad-slot="1517635495"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    
-    <section id="mods">
-      <h2>Mods for People Playground</h2>
-      <ul>
-        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2945650801" target="_blank">BarkNShoot (Original)</a></li>
-        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2972079125" target="_blank">StealthyChihuahuaPistol</a></li>
-        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2975230295" target="_blank">GreatDaneShotgun</a></li>
-        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2978247913" target="_blank">ShibaInuSniperRifle</a></li>
-        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2978897624" target="_blank">G-Fat Bomb</a></li>
-        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2980452790" target="_blank">BoomBrick-TheExplosiveTouch</a></li>
-        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2987916786" target="_blank">BullTerrierRevolver</a></li>
-        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2995014698" target="_blank">PitbullMinigun</a></li>
-        <li><a href="https://steamcommunity.com/sharedfiles/filedetaails/?id=2995799654" target="_blank">CommericialSizedLighter</a></li>
-        <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2998603158" target="_blank">CommericialSizedHammer</a></li>             
-      </ul>
+    <section id="LatestVideos">
+      <h2>Latest Videos:</h2>
+      <div id="latest-video-container" class="video-container"></div>
     </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:dog.software.official@europe.com">dog.software.official@europe.com</a></p>
-        <p>Facebook: <a href="https://web.facebook.com/people/DogSoftware/100091660015867/?_rdc=1&_rdr" target="_blank">DogSoftware Facebook Page</a></p>
-    </section>      
-    
-    <p><span id="currentDate"></span></p>
+
+    <section id="testimonials">
+      <h2>What people say:</h2>
+      <div class="testimonial">
+        <blockquote>"I do not regret giving you my steam points."</blockquote>
+        <p>- Hollow Blobl/BarknShoot</p>
+      </div>
+      <div class="testimonial">
+        <blockquote>"real"</blockquote>
+        <p>- theMan/CommercialSizedLighter</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2023 DogSoftware. All rights reserved.</p>
+    <p>&copy; 2023 DogSoftware. All rights reserved.</p>
   </footer>
+
+  <script>
+    const API_KEY = 'AIzaSyBtTbQaWnzp-ZCkA-OcQqDL7gZV-eHH-Fk';
+    const CHANNEL_ID = 'UCQjegy6_wprd4Vi9RPzrT7w';
+
+    // Fetch the latest videos from the YouTube Data API
+    function fetchLatestVideos() {
+      const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&maxResults=4&order=date&key=${API_KEY}`;
+
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          const videoList = document.getElementById('latest-video-container');
+
+          data.items.forEach(video => {
+            const videoId = video.id.videoId;
+            const videoTitle = video.snippet.title;
+            const videoThumbnail = video.snippet.thumbnails.medium.url;
+
+            // Create the HTML elements for each video
+            const videoElement = document.createElement('div');
+            videoElement.className = 'video-item';
+            videoElement.innerHTML = `
+              <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">
+                <img src="${videoThumbnail}" alt="${videoTitle}">
+                <h3>${videoTitle}</h3>
+              </a>
+            `;
+
+            // Append each video element to the video container
+            videoList.appendChild(videoElement);
+          });
+        })
+        .catch(error => {
+          console.log('Error fetching latest videos:', error);
+        });
+    }
+
+    // Call the fetchLatestVideos function when the page is loaded
+    window.addEventListener('load', fetchLatestVideos);
+  </script>
 </body>
 </html>
