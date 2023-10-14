@@ -1,0 +1,169 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #fff; /* Updated background color to white */
+    margin: 0;
+    padding: 0;
+    color: #000; /* Changed text color to black */
+}
+
+header {
+    background-color: #0b8a46;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    background-color: #044727;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: font-weight 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    margin: 20px;
+    text-align: center;
+    animation: fadeIn 1s;
+}
+
+#hero {
+    background-color: #eaeaea;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    animation: slideInLeft 1s;
+}
+
+#LatestVideos {
+    background-color: #dadada;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    animation: slideInRight 1s;
+}
+
+#LatestVideos h2 {
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-item {
+    width: 300px;
+    margin: 10px;
+    animation: zoomIn 1s;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.video-item h3 {
+    margin-top: 10px;
+}
+
+#testimonials {
+    background-color: #d6d6d6;
+    padding: 20px;
+    border: 1px solid #cdcccc;
+    animation: slideInLeft 1s;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    color: #000; /* Changed text color to black */
+}
+
+.testimonial p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #044727;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 1s;
+}
+
+footer p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
