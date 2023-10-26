@@ -113,6 +113,10 @@ footer {
     padding: 20px;
     color: #fff;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 footer p {
@@ -160,15 +164,40 @@ h1 {
         transform: scale(1);
     }
 }
-    /* For the real word */
-    @keyframes shake {
-        0% { transform: translateX(0); }
-        25% { transform: translateX(-5px); }
-        50% { transform: translateX(5px); }
-        75% { transform: translateX(-5px); }
-        100% { transform: translateX(5px); }
-      }
-  
-      .testimonial blockquote:hover {
-        animation: shake 0.5s ease-in-out infinite;
-      }
+
+/* For the real world */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+}
+
+.testimonial blockquote:hover {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+#about {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+#about p {
+    margin-bottom: 20px;
+}
+
+#about img {
+    max-height: 150px; 
+    width: auto;
+    margin-right: 20px; 
+}
