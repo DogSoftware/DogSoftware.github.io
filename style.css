@@ -1,174 +1,180 @@
-body {
-    font-family: "Arial", sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    color: #333;
+body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #489;
+  
 }
 
-header {
-    background-color: #007acc;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
+h2
+{
+  text-align: center;
+  background-color: white;
 }
 
-nav {
-    background-color: #004d80;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-    color: #555558;
-    font-weight: 600;
-}
-
-main {
-    margin: 20px;
-    text-align: left;
-}
-
-#hero {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border: 1px solid #e0e0e0;
-}
-
-#LatestVideos {
-    background-color: #f7f7f7;
-    padding: 30px;
-    border: 1px solid #dbdbdb;
-}
-
-#LatestVideos h2 {
-    margin-bottom: 20px;
-}
-
-.video-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.video-item {
-    width: 31%;
-    margin: 10px;
-}
-
-.video-item img {
-    width: 100%;
+img
+{
+    display: block;
+    width: 400px;
     height: auto;
-    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.video-item h3 {
-    margin-top: 10px;
-}
-
-#testimonials {
-    background-color: #f5f5f5;
-    padding: 30px;
-    border: 1px solid #e0e0e0;
-}
-
-.testimonial {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    text-align: center;
-}
-
-.testimonial blockquote {
-    font-style: italic;
-    color: #333;
-}
-
-.testimonial p {
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-footer {
-    background-color: #004d80;
+ /* The side navigation menu */
+ .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: -35px;
+    background-color: #6d6a6a; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #96a15b;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
     padding: 20px;
-    color: #fff;
-    text-align: center;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } 
+
+  span {
+    white-space: nowrap;
+    width: 60px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip; 
+    background-color: hsl(0, 0%, 100%);
+    display: block;
+    margin-top: -380px;
+    margin-left: 1px;
+    margin-right: auto;
+    cursor: pointer; /* Add this line to change cursor on hover */
+}
+
+marquee
+{
+    background-color: yellow;
+    border:1px solid black;
+    transform:
+        perspective(75em)
+        rotateX(18deg);
+      box-shadow:
+        rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+        rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+      border-radius: 10px;
+      border: 1px solid;
+      border-color:
+        rgb(213, 220, 226)
+        rgb(213, 220, 226)
+        rgb(184, 194, 204);
+    }
+
+footer 
+{
+    position: relative; /* Set position to relative for absolute positioning of copyright */
+}
+
+#copyright {
+  position: absolute;
+  display: block;
+  bottom: -600px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  background-color: #fff; /* Set the background color matching the site style */
+  border: 1px solid #000; /* Add a border */
+  text-align: center;
+  padding: 10px;
+  color: #000; /* Set text color */
+}
+
+section
+{
+  text-align: center;
+  position: relative;
+}
+
+div
+{
+  background-color: white;
+  border:1px solid black;
+}
+
+p
+{
+  font-weight: bolder;
+}
+
+.Frank
+{
+  height: auto;
+  width: 150px;
+}
+
+    
+.ppgmf-image {
+  max-width: 552px; 
 }
 
 footer p {
-    margin: 0;
+margin: 0;
 }
 
-h1 {
-    font-size: 40px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+main
+{
+  text-align: center;
+  position: relative;
+  bottom: -400px;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.ppgmf-image
+{
+  height: auto;
+  width: 550px;
+  border-radius: 1;
 }
 
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
+div {
+  border-radius: 20px;
+  border: 5px solid #e6e6e6;
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
+.TeamSection 
+{
+position: relative;
+bottom: -400px;
 }
-
-@keyframes zoomIn {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-    /* For the real word */
-    @keyframes shake {
-        0% { transform: translateX(0); }
-        25% { transform: translateX(-5px); }
-        50% { transform: translateX(5px); }
-        75% { transform: translateX(-5px); }
-        100% { transform: translateX(5px); }
-      }
-  
-      .testimonial blockquote:hover {
-        animation: shake 0.5s ease-in-out infinite;
-      }
