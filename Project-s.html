@@ -1,33 +1,43 @@
-<html>
-    <body>
-        <head>
-            <link rel="stylesheet" href="style.css">
-            <title>DogSoftware</title>
-            <link rel="icon" type="images/x-icon" href="Images/fav-icon.jpg">
-            <img src="Images/DogSoftware-LogoTransparent.png" alt="DogSoftware-LogoTransparent">
-            <div class="AboutDescription">
-            <H2>Indie studio based in 🇬🇷 Greece developing desktop games/applications and mods for existing games such as People Playground</H2>
-            </div>
-            <marquee>Welcome to the official DogSoftware site!</marquee>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Main</a>
-                <a href="Project-s.html">Projects</a>
-                <a href="Contact.html">Contact</a>
-              </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogSoftware</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Images/fav-icon.jpg">
+</head>
+<body>
+    <header>
+        <img src="Images/DogSoftware-LogoTransparent.png" alt="DogSoftware Logo">
+        <div class="AboutDescription">
+            <h2>Indie studio based in 🇬🇷 Greece developing desktop games/applications and mods for existing games such as People Playground</h2>
+        </div>
+        <marquee>Welcome to the official DogSoftware site!</marquee>
+    </header>
+    
+    <nav>
+        <span onclick="openNav()">☰ Menu</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Main</a>
+            <a href="Project-s.html">Projects</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="Projects">
+            <h2>Projects:</h2>
+            <a class="JustTetrisLogoHover" href="https://dogsoftware.itch.io/just-tetris"><img alt="Just Tetris Logo" src="Images/Just Tetris-Logo.png"></a>
+            <a class="PPGMFLogoHover" href="https://ppg-modforging.web.app/"><img class="ppgmf-image" src="Images/PPGMFLogoBigWithBackground.png" alt="PPGMF Logo"></a>
+            <a class="RetroXPLogoHover" href="https://dogsoftware.itch.io/retroxp"><img alt="RetroXP Logo" src="Images/RetroXP-Logo.png"></a>
+        </div>
+    </main>
 
-              <span onclick="openNav()">☰ Menu</span>
-              <script src="Scripts/SideNav.js"></script>
-              <script src="https://apis.google.com/js/api.js"></script>
-        </head>
-          <main>
-              <div class="Projects">
-              <h2>Projects:</h2>
-              <iframe frameborder="0" src="https://itch.io/embed/2440283?dark=true" width="552" height="167"><a href="https://dogsoftware.itch.io/just-tetris">Just-Tetris by DogSoftware</a></iframe>
-              <a href="https://ppg-modforging.web.app/"><img class="ppgmf-image" src="images/PPGMFLogoBigWithBackground.png" alt="PPGMFLogoBigWithBackground" style="display: block; margin: 0 auto;"/></a>
-              <iframe frameborder="0" src="https://itch.io/embed/2179271?dark=true" width="552" height="167"><a href="https://dogsoftware.itch.io/retroxp">RetroXP by DogSoftware</a></iframe>
-              </div>
-          </main>
+        <script src="Scripts/SideNav.js"></script>
+        <script src="https://apis.google.com/js/api.js"></script>
+        <footer><div id="copyright" align="center">&copy; 2021 - 2024 DogSoftware</div>
             <script>
             (function(){
                 let cpr = document.getElementById("copyright");
@@ -35,5 +45,5 @@
                 cpr.innerHTML += "<br/>Last Updated : "+document.lastModified;
             })();
             </script></footer>
-    </body>
+</body>
 </html>

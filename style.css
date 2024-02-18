@@ -46,7 +46,7 @@ img
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #96a15b;
+    color: #525250;
   }
   
   /* Position and style the close button (top right corner) */
@@ -74,6 +74,7 @@ img
     white-space: nowrap;
     width: 60px;
     border: 1px solid #000000;
+    border-radius: 5px;
     overflow: hidden;
     text-overflow: clip; 
     background-color: hsl(0, 0%, 100%);
@@ -163,8 +164,11 @@ main
 .ppgmf-image
 {
   height: auto;
-  width: 550px;
+  width: 300px;
   border-radius: 1;
+  position: relative;
+  left: -300px;
+  top: -100px;
 }
 
 div {
@@ -177,4 +181,60 @@ div {
 {
 position: relative;
 bottom: -400px;
+}
+
+.Projects {
+  text-align: center;
+}
+
+.JustTetrisLogoHover,
+.RetroXPLogoHover
+{
+  display: contents;
+  position: relative;
+}
+
+.JustTetrisLogoHover img,
+.RetroXPLogoHover img
+{
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.JustTetrisLogoHover img,
+.RetroXPLogoHover img,
+.JustTetrisLogoHover::after,
+.RetroXPLogoHover::after
+{
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  width: 200px; /* Set the width to match the image width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.JustTetrisLogoHover:hover img,
+.RetroXPLogoHover:hover img
+{
+  opacity: 0;
+}
+
+.JustTetrisLogoHover:hover::after
+{
+  content: url('Images/JustTetrisHover.gif');
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 500px;
+  opacity: 1;
+}
+
+.RetroXPLogoHover:hover::after
+{
+  content: url('Images/RetroXPHover.gif');
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 500px;
+  opacity: 1;
 }
