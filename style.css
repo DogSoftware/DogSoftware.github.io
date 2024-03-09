@@ -164,11 +164,11 @@ main
 .ppgmf-image
 {
   height: auto;
-  width: 300px;
-  border-radius: 1;
+  width: 200px;
   position: relative;
-  left: -300px;
-  top: -100px;
+  top: 0px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
 }
 
 div {
@@ -200,41 +200,40 @@ bottom: -400px;
   display: block;
   width: 200px;
   height: auto;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
 }
 
-.JustTetrisLogoHover img,
-.RetroXPLogoHover img,
-.JustTetrisLogoHover::after,
-.RetroXPLogoHover::after
-{
-  transition: opacity 0.5s ease-in-out;
-  opacity: 1;
-  width: 200px; /* Set the width to match the image width */
-  height: auto; /* Maintain aspect ratio */
+.carousel-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  perspective: 1000px;
 }
 
-.JustTetrisLogoHover:hover img,
-.RetroXPLogoHover:hover img
-{
-  opacity: 0;
-}
-
-.JustTetrisLogoHover:hover::after
-{
-  content: url('Images/JustTetrisHover.gif');
+.carousel {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 500px;
-  opacity: 1;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
 }
 
-.RetroXPLogoHover:hover::after
-{
-  content: url('Images/RetroXPHover.gif');
+.carousel-item {
+  width: 300px;
+  height: 300px;
   position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 500px;
-  opacity: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  transition: transform 0.5s;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
 }
