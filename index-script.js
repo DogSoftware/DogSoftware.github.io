@@ -17,7 +17,8 @@ const translations = {
         "EmailInfo": "Feel free to contact us via email for inquiries, support, or any questions you may have.",
         "Question":"Wanna get in touch?",
         "WebApps":"WebApps-OldestToNewest",
-        "Games":"Games-OldestToNewest"
+        "Games":"Games-OldestToNewest",
+        "noble-title": "Programmer",
     },
     "el": {
         "title": "DogSoftware - Ανεξάρτητο Στούντιο",
@@ -37,7 +38,8 @@ const translations = {
         "EmailInfo": "Μη διστάσετε να επικοινωνήσετε μαζί μας μέσω email για ερωτήσεις, υποστήριξη ή οποιαδήποτε άλλη ερώτηση που μπορεί να έχετε!",
         "Question":"Θέλετε να επικοινωνήσετε;",
         "WebApps":"WebApps-ΑπόΠαλαιότεροΣεΝεώτερο",
-        "Games":"Παιχνίδια-ΑπόΠαλαιότεροΣεΝεώτερο"
+        "Games":"Παιχνίδια-ΑπόΠαλαιότεροΣεΝεώτερο",
+        "noble-title": "Προγραμματιστής"
     }
 };
 
