@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 150px;
+    text-align: center;
+}
+
+.DS-Logo {
+    max-width: 30%;
+    height: auto;
+    object-fit: contain;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a, nav ul li button {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav ul li a:hover, nav ul li button:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    padding: 20px;
+}
+
+.Information {
+    text-align: center;
+    margin: 0 auto 20px;
+    padding: 0 10px;
+    max-width: 900px;
+}
+
+.Team {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    width: 180px;
+}
+
+.PersonPicture {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.translate-button
+{
+    top: -12px;
+    position: relative;
+}
+
+.TheMayhemPlaygroundHover
+{
+  display: inline-block;
+  background-image: url('Images/MapBG3.png');
+  height: 167px;
+  width: 208px;
+  position: relative;
+  top: -37px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.TheMayhemPlaygroundLogo
+{
+  display: inline-block;
+  height: auto;
+  width: 200px;
+  position: relative;
+  top: 25px;
+}

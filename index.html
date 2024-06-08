@@ -1,46 +1,53 @@
-<html>
-    <body>
-        <head>
-            <link rel="stylesheet" href="style.css">
-            <title>DogSoftware</title>
-              <link rel="icon" type="images/x-icon" href="Images/fav-icon.jpg">
-            <img src="Images/DogSoftware-LogoTransparent.png" alt="DogSoftware-LogoTransparent">
-            <meta name="google-site-verification" content="JTnx1yru1D733Id7zBQe7ftH7_fC5tsOa7VHj-NzZo0" />
-            <div class="AboutDescription">
-            <H2>Indie studio based in 🇬🇷 Greece developing desktop games/applications and mods for existing games such as People Playground</H2>
-            </div>
-            <marquee>Welcome to the official DogSoftware site!</marquee>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Main</a>
-                <a href="Project-s.html">Projects</a>
-                <a href="Contact.html">Contact</a>
-              </div>
-              
-
-              <span onclick="openNav()">☰ Menu</span>
-              <script src="Scripts/SideNav.js"></script>
-              <script src="https://apis.google.com/js/api.js"></script>
-              <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-
-        </head>
-        <section>
-            <div class="TeamSection">
-            <h3>Meet the team!</h3>
-            <p>Meet the masterminds behind DogSoftware:</p>
-            <H1>Myself</H1>
-            <img class="Frank" src="Images/FrankWest.jpg" alt="Frank-West">
-            <h3>💻I love developing desktop games/applications. I also love gaming!</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">DogSoftware - Indie Studio</title>
+    <link rel="icon" type="image/x-icon" href="Images/fav-icon.jpg">
+    <link rel="stylesheet" href="index-style.css">
+    <script defer src="index-script.js"></script>
+</head>
+<body>
+    <header class="Container">
+        <img class="DS-Logo" src="Images/DogSoftware-logos_transparent.png" alt="DogSoftware Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" data-translate="home-link">Home</a></li>
+                <li><a href="Contact.html" data-translate="contact-link">Contact Us</a></li>
+                <li><a href="Projects.html" data-translate="projects-link">Projects</a></li>
+                <li><button class="translate-button" id="translate-button">🇬🇷/🇺🇸</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="Information" data-translate="description">
+            Indie studio based in 🇬🇷 Greece developing desktop games/applications and mods for existing games such as People Playground
+        </h2>
+        <section class="Team">
+            <h3 class="Information" data-translate="team-title">Meet the team!</h3>
+            <p class="Information" data-translate="team-description">Meet the masterminds behind DogSoftware:</p>
+            <div class="team-member">
+                <img src="Images/Lalekos.png" class="PersonPicture" alt="Mr.Lalekos">
+                <h2 data-translate="Lalekos">Mr. Lalekos</h2>
+                <h3 data-translate="lalekos-title">Programmer, CEO, Founder, and "Creative" Sprite Designer</h3>
             </div>
         </section>
-
-        <footer><div id="copyright" align="center">&copy; 2021 - 2024 DogSoftware</div>
-            <script>
-            (function(){
-                let cpr = document.getElementById("copyright");
-                cpr.innerHTML = "&copy; 2021 - "+new Date().getFullYear()+" DogSoftware - All Rights Reserved.";
-                cpr.innerHTML += "<br/>Last Updated : "+document.lastModified;
-            })();
-            </script></footer>
-    </body>
+        <hr>
+        <section class="Team">
+            <h3 class="Information" data-translate="contributors-title">Meet the contributors!</h3>
+            <p class="Information" data-translate="contributors-description">Cool People:</p>
+            <div class="team-member">
+                <img src="Images/Spyridon.png" class="PersonPicture" alt="Spyridon">
+                <h2 data-translate="Spyridon">Spyridon</h2>
+                <h3 data-translate="spyridon-title">Idea Guy, Voice Actor</h3>
+            </div>
+            <div class="team-member">
+                <img src="Images/Srabb.png" class="PersonPicture" alt="Srabb">
+                <h2>Srabb</h2>
+                <h3 data-translate="srabb-title">Patreon (TMP Funding Steam Page), Idea Guy, Helper</h3>
+            </div>
+        </section>
+    </main>
+</body>
 </html>
