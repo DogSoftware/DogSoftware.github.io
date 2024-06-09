@@ -19,6 +19,7 @@ const translations = {
         "WebApps":"WebApps-OldestToNewest",
         "Games":"Games-OldestToNewest",
         "noble-title": "Programmer",
+        "wws-title":"Sound Effects Designer"
     },
     "el": {
         "title": "DogSoftware - Ανεξάρτητο Στούντιο",
@@ -39,7 +40,8 @@ const translations = {
         "Question":"Θέλετε να επικοινωνήσετε;",
         "WebApps":"WebApps-ΑπόΠαλαιότεροΣεΝεώτερο",
         "Games":"Παιχνίδια-ΑπόΠαλαιότεροΣεΝεώτερο",
-        "noble-title": "Προγραμματιστής"
+        "noble-title": "Προγραμματιστής",
+        "wws-title":"Σχεδιαστής Ηχητικών Εφέ"
     }
 };
 
