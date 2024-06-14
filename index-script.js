@@ -19,7 +19,8 @@ const translations = {
         "WebApps":"WebApps-OldestToNewest",
         "Games":"Games-OldestToNewest",
         "noble-title": "Programmer",
-        "wws-title":"Sound Effects Designer"
+        "wws-title":"Sound Effects Designer",
+        "rocky-title": "Voice Actor"
     },
     "el": {
         "title": "DogSoftware - Ανεξάρτητο Στούντιο",
@@ -41,7 +42,8 @@ const translations = {
         "WebApps":"WebApps-ΑπόΠαλαιότεροΣεΝεώτερο",
         "Games":"Παιχνίδια-ΑπόΠαλαιότεροΣεΝεώτερο",
         "noble-title": "Προγραμματιστής",
-        "wws-title":"Σχεδιαστής Ηχητικών Εφέ"
+        "wws-title":"Σχεδιαστής Ηχητικών Εφέ",
+        "rocky-title": "Ηθοποιός Φωνής"
     }
 };
 
