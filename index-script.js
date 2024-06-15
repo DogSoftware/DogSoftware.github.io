@@ -20,7 +20,8 @@ const translations = {
         "Games":"Games-OldestToNewest",
         "noble-title": "Programmer",
         "wws-title":"Sound Effects Designer",
-        "rocky-title": "Voice Actor"
+        "rocky-title": "Voice Actor",
+        "joel-title": "Music Composer"
     },
     "el": {
         "title": "DogSoftware - Ανεξάρτητο Στούντιο",
@@ -43,7 +44,8 @@ const translations = {
         "Games":"Παιχνίδια-ΑπόΠαλαιότεροΣεΝεώτερο",
         "noble-title": "Προγραμματιστής",
         "wws-title":"Σχεδιαστής Ηχητικών Εφέ",
-        "rocky-title": "Ηθοποιός Φωνής"
+        "rocky-title": "Ηθοποιός Φωνής",
+        "joel-title": "Μουσικοσυνθέτης"
     }
 };
 
