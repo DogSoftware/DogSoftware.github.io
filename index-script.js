@@ -21,7 +21,8 @@ const translations = {
         "noble-title": "Programmer",
         "wws-title":"Sound Effects Designer",
         "rocky-title": "Voice Actor",
-        "joel-title": "Music Composer"
+        "joel-title": "Music Composer",
+        "Jam2":"Cool and satisfying game in 16 hours? #2 - Winners"
     },
     "el": {
         "title": "DogSoftware - Ανεξάρτητο Στούντιο",
@@ -45,7 +46,8 @@ const translations = {
         "noble-title": "Προγραμματιστής",
         "wws-title":"Σχεδιαστής Ηχητικών Εφέ",
         "rocky-title": "Ηθοποιός Φωνής",
-        "joel-title": "Μουσικοσυνθέτης"
+        "joel-title": "Μουσικοσυνθέτης",
+        "Jam2":"Γαμάτο και satisfying παιχνίδι σε 16 ώρες; #2 - Νικητές"
     }
 };
 
