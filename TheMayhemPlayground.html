@@ -1,82 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <body>
-      <head>
-        <title>The Mayhem Plaground</title>
-        <link rel="icon" type="images/x-icon" href="Images/fav-icon.jpg">
-        <link rel="stylesheet" href="TMP-Page-Style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      </head>
-       <img src="Images/TMH-Logo.png" alt="TMP-Logo">
-       <u><i><h2>One of DogSoftware's biggest projects yet.</h2></i></u>
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/D5avz2Ev_5E?si=x-AZzpij423Atxak" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       <i><h2>Coming when it's done on Steam and Itch-IO</h2></i>
-       <div><img class="SteamButton" src="Images/Steam_logo.png" alt="Steam"> <img class="Button" src="Images/Itch-IO.png" alt="Itch-IO"></div>
-      <hr>
-      <h2>Features:</h2>
-      <style>
-        table {
-          border:2px solid #b3adad;
-          border-collapse:collapse;
-          padding:5px;
-        }
-        table th {
-          border:2px solid #b3adad;
-          padding:5px;
-          background: #f0f0f0;
-          color: #313030;
-        }
-        table td {
-          border:2px solid #b3adad;
-          text-align:center;
-          padding:5px;
-          background: #ffffff;
-          color: #313030;
-        }
-      </style>
-    </head>
-    <body>
-      <center><table>
-        <thead>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mayhem Playground</title>
+    <link rel="icon" type="image/x-icon" href="Images/fav-icon.jpg">
+    <link rel="stylesheet" href="TMP-Page-Style.css">
+</head>
+<body>
+    <img src="Images/TMP-Logo.png">
+    <img src="Images/HumansStarring.png">
+    
+    <div class="InspirationInfo">
+        <h2>Inspired by:</h2>
+        <h3>Studio Minus - People Playground</h3>
+        <h3>Rava Games - Mutilate a Doll</h3>
+        <h3>Garry Newman/Facepunch - Gmod</h3>
+    </div>
+    <hr>
+    <div class="features">
+      <h2>Game Features</h2>
+      <table>
           <tr>
-            <th>Planned Features<br></th>
-            <th><img class="Under_construction" src="Images/Under_construction.gif">Under Work<br></th>
-            <th>Implemented</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Native Linux Support <br></td>
-            <td>Multiplayer <br></td>
-            <td>Spawn Menu <br></td>
+              <td>Native Linux Support</td>
+              <td>Multiplayer</td>
+              <td>Tons of items to play around</td>
           </tr>
           <tr>
-            <td>Map Editor <br></td>
-            <td>Realistic Anatomy<br></td>
-            <td>Active Ragdolls <br></td>
+              <td>Unleash your creativity</td>
+              <td>Play with your friends in different funny game modes like last stand</td>
+              <td>A lot of maps to play around</td>
           </tr>
           <tr>
-            <td>Mods <br></td>
-            <td>Realistic Gore<br></td>
-            <td>Copy/Paste&amp;Delete Menu <br></td>
+              <td>Mod Support</td>
+              <td colspan="2">And more coming soon!</td>
           </tr>
-          <tr>
-            <td>&nbsp;More maps<br></td>
-            <td>Cool Interactions Menu<br></td>
-            <td>Killing entities... <br></td>
-          </tr>
-          <tr>
-            <td>And more to come!<br></td>
-            <td>The Huge Map <br></td>
-            <td>Kind of realistic lighting<br></td>
-          </tr>
-        </tbody>
-      </center></table>
-      <hr>
-      <h2>Join the official DogSoftware server to stay updated and share ideas and suggestions for TMP!</h2>
-       <iframe class="Discord" src="https://discord.com/widget?id=1222250527618760758&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-       <hr>
-       <h2>Help fund the <a href="https://www.patreon.com/DogSoftware">steam page</a>!</h2>
-    </body>
+      </table>
+  </div>
+
+  <div id="carousel">
+    <img src="Images/Rousel1.png" class="carousel-item">
+    <img src="Images/Rousel2.png" class="carousel-item">
+    <img src="Images/Rousel3.png" class="carousel-item">
+</div>
+<hr>
+    
+    <h2>Join the official DogSoftware server to stay updated and share ideas and suggestions for TMP!</h2>
+    
+    <iframe class="Discord" src="https://discord.com/widget?id=1222250527618760758&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+    
+    <h2>Help fund the <a href="https://www.patreon.com/DogSoftware">steam page</a>!</h2>
+
+    <script src="TMP-Page-Script.js"></script>
+    <div id="copyright" class="copyright" align="center">&copy;  2024 DogSoftware - All Rights Reserved.</div>
+    <script>
+    // Copyright Auto
+      (() => {
+          let cpr = document.getElementById("copyright");
+          cpr.innerHTML = "&copy;  "+new Date().getFullYear()+" Hyperbola - All Rights Reserved.";
+          cpr.innerHTML += "<br/>Last Updated : "+document.lastModified;
+      })();</script>
+</body>
 </html>

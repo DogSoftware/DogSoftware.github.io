@@ -1,114 +1,142 @@
-body
-{
+body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url('Images/MapBG3.png');
-  
+  background-color: black;
+  color: white;
 }
 
-h2
-{
+h2 {
   text-align: center;
 }
 
-img
-{
-    display: block;
-    width: 700px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+img {
+  display: block;
+  width: 700px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
- /* The side navigation menu */
- .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: -35px;
-    background-color: #6d6a6a; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #525250;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  } 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -35px;
+  background-color: #6d6a6a;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
 
-  iframe
-  {
-    justify-content: center;
-    display: flex;
-    position: relative;
-    margin: auto;
-  }
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
 
-  .Button
-  {
-    display: inline-block;
-    justify-content: center;
-    width: 100px;
-    height: auto;
-    align-self: center;
-  }
+.sidenav a:hover {
+  color: #525250;
+}
 
-  .SteamButton
-  {
-    display: inline-block;
-    justify-content: center;
-    width: 125px;
-    height: auto;
-    align-self: center;
-  }
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
 
-  div
-  {
-    position: relative;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
+@media screen and (max-height: 450px) {
+  .sidenav { padding-top: 15px; }
+  .sidenav a { font-size: 18px; }
+}
 
-  .Under_construction
-{
+iframe {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+
+.Button {
+  display: inline-block;
+  justify-content: center;
+  width: 100px;
+  height: auto;
+  align-self: center;
+}
+
+.SteamButton {
+  display: inline-block;
+  justify-content: center;
+  width: 125px;
+  height: auto;
+  align-self: center;
+}
+
+div {
+  position: relative;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Under_construction {
   width: 25px;
   height: auto;
   position: relative;
   margin-left: 5px;
   margin-bottom: -19px;
+}
+
+.InspirationInfo {
+  background-color: black;
+}
+
+#carousel {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+
+.carousel-item {
+  display: none;
+  width: 100%;
+}
+
+.features {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.features table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: #6f6f6f;
+}
+
+.features table td {
+  padding: 15px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.features table tr:first-child {
+  background-color: #aaaaaa;
+}
+
+.features table tr:nth-child(even) {
+  background-color: #a5a5a5;
 }
