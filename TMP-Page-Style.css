@@ -140,3 +140,15 @@ div {
 .features table tr:nth-child(even) {
   background-color: #a5a5a5;
 }
+
+.DCO
+{
+  position: relative;
+  left: 350px;
+}
+
+.DCO-2
+{
+  position: relative;
+  right: 389px;
+}
