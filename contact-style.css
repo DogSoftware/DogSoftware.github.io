@@ -92,3 +92,12 @@ main {
     top: -12px;
     position: relative;
 }
+
+.announcement {
+    background-color: #d9e000;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    z-index: 1000;
+    font-size: 18px;
+}
