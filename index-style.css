@@ -164,7 +164,8 @@ main {
   background-color: #717171;
 }
 
-.fade {
+.fade 
+{
     animation-name: fade3D;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
